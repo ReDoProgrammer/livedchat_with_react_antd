@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Login from './components/login'
 function App() {
-  return <p>This is live chat room</p>
+  return <Login/>
 }
 
 export default App;
