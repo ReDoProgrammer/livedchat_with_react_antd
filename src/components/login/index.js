@@ -8,6 +8,9 @@ export default function Login() {
     const handleFbLogin = ()=>{
         auth.signInWithPopup(fbProvider)
     }
+    auth.onAuthStateChanged(user=>{
+        console.log({user})
+    })
     return (
         <div>
             <Row justify={'center'} style={{height:800}}>
